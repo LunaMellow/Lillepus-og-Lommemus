@@ -26,8 +26,6 @@ import sys
 import json
 from urllib.request import urlopen
 import interval
-from kivy.app import App
-from kivy.uix.button import Button
 
 #IPinfo.io database variables
 url = 'http://ipinfo.io/json'
@@ -195,9 +193,3 @@ f.close()
 # Line break for continuation
 print("\033[1;32;0m.....................................................")
 sleep(1)
-
-class TestApp(App):
-    def build(self):
-        return Button(text='Hello World')
-
-TestApp().run()
